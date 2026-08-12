@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+mark {
+  background-color: #ffedd5;
+  color: #9a3412;
+  padding: 0 0.25rem;
+  border-radius: 0.125rem;
+  font-weight: 500;
+}
+
+.dark mark {
+  background-color: rgba(234, 88, 12, 0.15);
+  color: #fdba74;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
